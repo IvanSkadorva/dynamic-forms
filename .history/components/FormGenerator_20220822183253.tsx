@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, useState } from 'react'
+import React, { FormEvent, useState } from 'react'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import { FieldType } from '../models/enums/fieldType'
@@ -38,7 +38,7 @@ export const FormGenerator: React.FC<FormGeneratorProps> = ({ fields }) => {
     setValidated(true)
   }
 
-  const populateFormData = (form: any): void => {
+  const populateFormData = (form: HTMLFormElement): void => {
     let submittedFormData = new Map()
     let unchekcedRadioOptionsRange = 0
 

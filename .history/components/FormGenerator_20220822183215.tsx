@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, useState } from 'react'
+import React, { FormEvent, useState } from 'react'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import { FieldType } from '../models/enums/fieldType'
@@ -38,7 +38,7 @@ export const FormGenerator: React.FC<FormGeneratorProps> = ({ fields }) => {
     setValidated(true)
   }
 
-  const populateFormData = (form: any): void => {
+  const populateFormData = (form: EventTarget): void => {
     let submittedFormData = new Map()
     let unchekcedRadioOptionsRange = 0
 
@@ -51,7 +51,7 @@ export const FormGenerator: React.FC<FormGeneratorProps> = ({ fields }) => {
     setFormData(submittedFormData)
   }
 
-  const handleChange = (event: ChangeEvent<HTMLFormElement>) => {
+  const handleChange = (event) => {
     const form = event.currentTarget
     disablingRules.forEach((value, key) => {
       form[key].value === 'true'

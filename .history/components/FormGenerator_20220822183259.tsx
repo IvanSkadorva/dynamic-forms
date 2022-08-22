@@ -38,7 +38,7 @@ export const FormGenerator: React.FC<FormGeneratorProps> = ({ fields }) => {
     setValidated(true)
   }
 
-  const populateFormData = (form: any): void => {
+  const populateFormData = (form: HTMLFormElement): void => {
     let submittedFormData = new Map()
     let unchekcedRadioOptionsRange = 0
 
