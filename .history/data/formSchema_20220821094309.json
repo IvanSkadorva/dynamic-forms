@@ -1,0 +1,99 @@
+[
+  {
+    "id": "name",
+    "type": "input",
+    "placeholder": "Enter name",
+    "config": {
+      "dataType": "text",
+      "placeholder": "Your Name"
+    },
+    "value": "",
+    "validation": {
+      "required": true
+    },
+    "valid": false,
+    "errorMessage": "Enter Valid data",
+    "touched": false
+  },
+  {
+    "id": "street",
+    "type": "textarea",
+    "placeholder": "Enter Address",
+    "config": {
+      "dataType": "text",
+      "placeholder": "Street"
+    },
+    "value": "",
+    "validation": {
+      "required": true
+    },
+    "valid": false,
+    "errorMessage": "Enter Valid data",
+    "touched": false
+  },
+  {
+    "id": "zipCode",
+    "type": "input",
+    "placeholder": "Enter zipcode",
+    "config": {
+      "dataType": "text",
+      "placeholder": "ZIP Code"
+    },
+    "value": "",
+    "validation": {
+      "required": true,
+      "minLength": 5,
+      "maxLength": 5
+    },
+    "valid": false,
+    "errorMessage": "Enter Valid data",
+    "touched": false
+  },
+  {
+    "id": "country",
+    "type": "select",
+    "placeholder": "Enter country",
+    "config": {
+      "dataType": "text",
+      "placeholder": "Country"
+    },
+    "options": [
+      {
+        "value": "USA",
+        "displayValue": "United state of america"
+      },
+      {
+        "value": "UK",
+        "displayValue": "United kingdom"
+      },
+      {
+        "value": "IN",
+        "displayValue": "India"
+      }
+    ],
+    "value": "",
+    "validation": {
+      "required": true
+    },
+    "valid": false,
+    "errorMessage": "Enter Valid data",
+    "touched": false
+  },
+  {
+    "id": "email",
+    "type": "input",
+    "placeholder": "Enter email",
+    "config": {
+      "dataType": "email",
+      "placeholder": "Your E-Mail"
+    },
+    "value": "",
+    "validation": {
+      "required": true,
+      "isEmail": true
+    },
+    "valid": false,
+    "errorMessage": "Enter Valid data",
+    "touched": false
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "id": "jobTitle",
+    "type": "text",
+    "label": "Job Title",
+    "placeholder": "CTO"
+  },
+  {
+    "id": "employmentPeriod",
+    "type": "radio",
+    "label": "You preffered employment period",
+    "options": [
+      {
+        "value": "fixed",
+        "displayValue": "Fixed Term"
+      },
+      {
+        "value": "permanent",
+        "displayValue": "Permanent"
+      }
+    ],
+    "value": "",
+    "validation": {
+      "required": true
+    },
+    "valid": false,
+    "errorMessage": "Enter Valid data",
+    "touched": false
+  },
+  {
+    "id": "currentEmployment ",
+    "type": "switch",
+    "placeholder": "Are you currently Employed?",
+    "validation": {
+      "required": true
+    },
+    "valid": false,
+    "errorMessage": "Enter Valid data"
+  },
+  {
+    "id": "startDate",
+    "type": "date",
+    "placeholder": "Enter your start date",
+    "validation": {
+      "required": true,
+      "minLength": 5,
+      "maxLength": 5
+    },
+    "errorMessage": "Enter Valid data"
+  },
+  {
+    "id": "endDate",
+    "type": "date",
+    "placeholder": "Enter your end date",
+    "validation": {
+      "required": true,
+      "minLength": 5,
+      "maxLength": 5
+    },
+    "errorMessage": "Enter Valid data"
+  },
+  {
+    "id": "employerName",
+    "type": "text",
+    "placeholder": "Enter the employer name",
+    "validation": {
+      "required": true
+    },
+    "errorMessage": "Enter Valid data"
+  },
+  {
+    "id": "contactNumber",
+    "type": "tel",
+    "placeholder": "+12 34 567 890",
+    "validation": {
+      "required": true
+    },
+    "errorMessage": "Enter Valid data"
+  },
+  {
+    "id": "email",
+    "type": "email",
+    "placeholder": "Email",
+    "validation": {
+      "required": true
+    },
+    "errorMessage": "Enter Valid data"
+  }
+]

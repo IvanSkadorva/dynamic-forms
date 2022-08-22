@@ -1,0 +1,87 @@
+[
+  {
+    "id": "jobTitle",
+    "type": "input",
+    "placeholder": "Job Title",
+    "dataType": "text",
+    "value": "",
+    "required": true,
+    "errorMessage": "Enter Valid data"
+  },
+  {
+    "id": "employmentPeriod",
+    "type": "select",
+    "placeholder": "Choose Employment Period",
+    "options": [
+      {
+        "value": "fixed",
+        "displayValue": "Fixed Term"
+      },
+      {
+        "value": "permanent",
+        "displayValue": "Permanent"
+      }
+    ],
+    "value": "",
+    "validation": {
+      "required": true
+    },
+    "valid": false,
+    "errorMessage": "Enter Valid data",
+    "touched": false
+  },
+  {
+    "id": "street",
+    "type": "textarea",
+    "placeholder": "Enter Address",
+    "config": {
+      "dataType": "text",
+      "placeholder": "Street"
+    },
+    "value": "",
+    "validation": {
+      "required": true
+    },
+    "valid": false,
+    "errorMessage": "Enter Valid data"
+  },
+  {
+    "id": "startDate",
+    "type": "input",
+    "placeholder": "Enter your start date",
+    "validation": {
+      "required": true,
+      "minLength": 5,
+      "maxLength": 5
+    },
+    "errorMessage": "Enter Valid data"
+  },
+  {
+    "id": "endDate",
+    "type": "input",
+    "placeholder": "Enter your end date",
+    "validation": {
+      "required": true,
+      "minLength": 5,
+      "maxLength": 5
+    },
+    "errorMessage": "Enter Valid data"
+  },
+  {
+    "id": "email",
+    "type": "input",
+    "placeholder": "Enter email",
+    "config": {
+      "dataType": "email",
+      "placeholder": "Your E-Mail"
+    },
+    "value": "",
+    "validation": {
+      "required": true,
+      "isEmail": true
+    },
+    "valid": false,
+    "errorMessage": "Enter Valid data",
+    "touched": false
+  }
+]
