@@ -28,6 +28,7 @@ export const FormGenerator: React.FC<FormGeneratorProps> = ({ fields }) => {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     const form = event.currentTarget
     event.preventDefault()
+    event.stopPropagation()
 
     populateFormData(form)
 
